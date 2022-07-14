@@ -1,0 +1,3 @@
+# sudoku
+
+`python solver.py`
