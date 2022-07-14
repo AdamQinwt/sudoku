@@ -162,7 +162,7 @@ class SudokuSolver:
             # print(f'Cannot Use assume_filler @ {min_npossible}>{assume_thresh}')
             return False
         elif min_npossible==0:
-            return None
+            return False
         assume_idx=min_npossible_idx
         assume_list=[sym for sym in symbols if self.cells[assume_idx].possible[sym]]
         print(f'Assuming {assume_list} @ {assume_idx}')
